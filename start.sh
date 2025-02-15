@@ -26,11 +26,11 @@ apt install neofetch -y
 
 # Clone T-Header repository
 echo "Cloning T-Header repository..."
-git clone https://github.com/CRZX1337/T-Header.git
+git clone https://github.com/CRZX1337/Termux-Start-Script.git
 
 # Navigate to T-Header directory and run t-header.sh
 echo "Running T-Header script..."
-cd T-Header && bash t-header.sh
+cd Termux-Start-Script && cd script && bash t-header.sh
 
 # Add neofetch to zshrc to run on startup
 echo "Adding 'neofetch' to ~/.zshrc for startup..."
