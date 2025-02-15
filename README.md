@@ -3,9 +3,8 @@
 **One-Click Installation**
 
 Copy-paste this entire command into Termux:
-content_copy
-download
-Use code with caution.
+
+**Use code with caution.**
 
 ```
 apt update && apt upgrade -y && apt install git -y && git clone https://github.com/CRZX1337/Termux-Start-Script.git && cd Termux-Start-Script/ && chmod +x start.sh && ./start.sh
