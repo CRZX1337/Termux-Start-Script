@@ -29,7 +29,7 @@ apt update && apt upgrade -y && apt install git -y && git clone https://github.c
 
 *   **Automated Setup:** Streamlines initial Termux configuration with a single command.
 *   **Essential Tools:** Installs commonly used packages like `git`, `curl`, `wget`, `zip`, `unzip`, `python`, `python-pip`, and `neofetch`.
-*   **Custom Terminal Header:** Integrates [T-Header](https://github.com/CRZX1337/T-Header) for a personalized terminal banner.
+*   **Custom Terminal Header:** Integrates [T-Header](https://github.com/CRZX1337/Termux-Start-Script/tree/main/script) for a personalized terminal banner.
 *   **Clean Interface:** Removes the default MOTD for a cleaner startup.
 *   **System Information:** Automatically launches `neofetch` on each Termux startup.
 *   **Customizable:**  Edit `start.sh` to modify installed packages or setup steps to fit your needs.
