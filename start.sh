@@ -51,4 +51,4 @@ rm -rf Termux-Start-Script  # Entferne das Verzeichnis
 # Restart Termux
 echo "Restart Termux"
 sleep 3
-exit
+killall bash
