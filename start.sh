@@ -24,13 +24,13 @@ apt install git -y
 echo "Installing neofetch..."
 apt install neofetch -y
 
-# Clone T-Header repository
-echo "Cloning T-Header repository..."
-git clone https://github.com/CRZX1337/Termux-Start-Script.git
-
 # Navigate to T-Header directory and run t-header.sh
 echo "Running T-Header script..."
-cd Termux-Start-Script && cd script && bash t-header.sh
+ cd script && bash t-header.sh
+
+# Change background color in colors.properties to black
+echo "Changing background color in colors.properties to black..."
+sed -i 's/background=#282a36/background=#000000/' ~/.termux/colors.properties
 
 # Add neofetch to zshrc to run on startup
 echo "Adding 'neofetch' to ~/.zshrc for startup..."
@@ -42,3 +42,13 @@ fi
 
 echo "Neofetch will now run automatically on each Termux startup."
 echo "MOTD removed and setup complete!"
+
+# Navigate back to the parent directory and remove Termux-Start-Script
+echo "Removing Termux-Start-Script directory..."
+cd  # Gehe zurück ins übergeordnete Verzeichnis
+rm -rf Termux-Start-Script  # Entferne das Verzeichnis
+
+# Restart Termux
+echo "Restart Termux"
+sleep 3
+exit
